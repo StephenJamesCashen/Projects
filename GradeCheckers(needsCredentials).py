@@ -2,9 +2,9 @@ from twill import get_browser#For Webbrowsing
 from twill.commands import * #For Webbrowsing
 from bs4 import BeautifulSoup #For HTML Parsing
 import twill #For Webbrowsing
-import time #for wainting period
+import time #for waiting period
 from slackclient import SlackClient
-token = [Slack-Api-Token]
+token = [Slack-Api-Token] #Your Slack token should be placed here
 sc = SlackClient(token)
 b = get_browser()
 Period=30 #minutes
@@ -12,8 +12,8 @@ list=[]
 while(True):
     clear_cookies()
     b.go("https://ssc.adm.ubc.ca/sscportal/servlets/SRVAcademicRecord?context=html")
-    formvalue(2,"username","UBC CWL username")
-    formvalue(2,"password","UBC CWL Password")
+    formvalue(2,"username","UBC CWL username") #CWL Username
+    formvalue(2,"password","UBC CWL Password") #CWL Password
     submit() # We just logged in
     class DevNull(object):
         def write(self, str):
