@@ -41,4 +41,4 @@ while(True):
     #                    text="You're grades have not changed :(", username='My Sweet Bot',
     #                    icon_emoji=':robot_face:')
     list=tlist
-    time.sleep(Period*60)
+    time.sleep(Period*60) #Period could be shorter, however overloading UBC servers is against terms of use.
